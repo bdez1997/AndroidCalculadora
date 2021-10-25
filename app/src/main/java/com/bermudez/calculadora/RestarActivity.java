@@ -6,23 +6,24 @@ import android.os.Bundle;
 
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class RestarActivity extends AppCompatActivity {
     EditText NumberResta,NumberResta2;
     TextView txtResultadoResta;
-    Button btnRestar;
+    ImageButton btnRestaOp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restar);
-
-        btnRestar =findViewById(R.id.btnRestar);
+        setTitle("Restar");
+        btnRestaOp =findViewById(R.id.btnRestaOp);
         NumberResta=findViewById(R.id.editTxtRestar);
         NumberResta2=findViewById(R.id.editTxtRestar2);
         txtResultadoResta=findViewById(R.id.txtResultadoRestar);
 
-        btnRestar.setOnClickListener(e->{
+        btnRestaOp.setOnClickListener(e->{
             txtResultadoResta.setText(""+Restar());
         });
 

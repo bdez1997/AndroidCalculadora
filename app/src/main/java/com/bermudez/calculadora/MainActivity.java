@@ -32,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(ventanaMultiplicar);
         });
 
+        btnDividir.setOnClickListener(e->{
+           Intent ventanaDividir=new Intent(this,DividirActivity.class);
+           startActivity(ventanaDividir);
+        });
+
     }
 }

@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class SumarActivity extends AppCompatActivity {
-    Button btnCalcularSuma;
+    ImageButton btnCalcularSuma;
     EditText numberSuma,numberSuma2;
     TextView txtResultadoSuma;
     @Override
@@ -20,6 +21,7 @@ public class SumarActivity extends AppCompatActivity {
         numberSuma=findViewById(R.id.editTextNumberSuma);
         numberSuma2=findViewById(R.id.editTextNumberSuma2);
         txtResultadoSuma=findViewById(R.id.txtResultadoRestar);
+
         btnCalcularSuma.setOnClickListener(e->{
                 txtResultadoSuma.setText(""+sumar());
         });

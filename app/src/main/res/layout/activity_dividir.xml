@@ -7,51 +7,46 @@
     tools:context=".DividirActivity">
 
     <EditText
-        android:id="@+id/editTxtDividir"
-        android:layout_width="217dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="92dp"
+        android:id="@+id/editTxtNumberDividir"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Introduce un número para Dividir"
         android:inputType="number"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTxtDividir2"
-        android:layout_width="217dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="Introduce un numero para dividir"
         android:inputType="number"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtDividir" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtNumberDividir" />
 
     <TextView
-        android:id="@+id/txtResultadoDividir"
+        android:id="@+id/txtResDividir"
         android:layout_width="@dimen/LblWidth"
         android:layout_height="@dimen/lblHeight"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxtDividir2" />
 
-    <Button
-        android:id="@+id/btnDividir"
+    <ImageButton
+        android:id="@+id/btnDivision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Button"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResultadoDividir" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResDividir"
+        app:srcCompat="@drawable/division" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

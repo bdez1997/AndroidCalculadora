@@ -1,38 +1,41 @@
 package com.bermudez.calculadora;
 
-import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
 public class DividirActivity extends AppCompatActivity {
-    EditText NumberDividir,NumberDividir2;
-    TextView txtResultadoDividir;
-    Button btnDividir;
+    ImageButton btnDivision;
+    EditText txtNumberDivision,txtNumberDivision2;
+    TextView txtResDivision;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dividir);
 
-        btnDividir =findViewById(R.id.btnDividir);
-        NumberDividir=findViewById(R.id.editTxtDividir);
-        NumberDividir2=findViewById(R.id.editTxtDividir2);
-        txtResultadoDividir=findViewById(R.id.txtResultadoDividir);
+        setTitle("Dividir");
+        btnDivision =findViewById(R.id.btnDivision);
+        txtNumberDivision=findViewById(R.id.editTxtNumberDividir);
+        txtNumberDivision2=findViewById(R.id.editTxtDividir2);
+        txtResDivision=findViewById(R.id.txtResDividir);
 
-        btnDividir.setOnClickListener(e->{
-            txtResultadoDividir.setText(""+Dividir());
-        });
-
+           btnDivision.setOnClickListener(e->{
+               txtResDivision.setText(""+dividir());
+           });
     }
-    public double Dividir(){
-        Double dNume,dNume2,dDivision;
+    public double dividir(){
+        double doNumero,doNumero1,doDivision;
 
-        dNume=Double.parseDouble(NumberDividir.getText().toString());
-        dNume2=Double.parseDouble(NumberDividir2.getText().toString());
-        dDivision=(dNume/dNume2);
+        doNumero=Double.parseDouble(txtNumberDivision.getText().toString());
+        doNumero1=Double.parseDouble(txtNumberDivision2.getText().toString());
 
-        return dDivision;
+        doDivision=doNumero/doNumero1;
+        return doDivision;
+
     }
 }

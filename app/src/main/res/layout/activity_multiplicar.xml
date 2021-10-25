@@ -23,8 +23,9 @@
         android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/edittxtMultiplicar"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtMultiplicar" />
 
     <TextView
         android:id="@+id/txtResMultiplicacion"
@@ -37,13 +38,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxtMultiplicar2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/butnMultiplicacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Button"
+        android:layout_width="110dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResMultiplicacion" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResMultiplicacion"
+        app:srcCompat="@drawable/multiplicar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

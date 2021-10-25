@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MultiplicarActivity extends AppCompatActivity {
-    Button btnMultiplicacion;
+    ImageButton btnMultiplicacion;
     EditText txtNumberMultiplicar,txtNumberMultiplicar2;
     TextView txtMultiplicacion;
 
@@ -16,6 +17,7 @@ public class MultiplicarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiplicar);
+        setTitle("Multiplicar");
         btnMultiplicacion=findViewById(R.id.butnMultiplicacion);
         txtNumberMultiplicar=findViewById(R.id.edittxtMultiplicar);
         txtNumberMultiplicar2=findViewById(R.id.editTxtMultiplicar2);

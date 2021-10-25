@@ -44,14 +44,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxtRestar2" />
 
-    <Button
-        android:id="@+id/btnRestar"
+    <ImageButton
+        android:id="@+id/btnRestaOp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Button"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResultadoRestar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResultadoRestar"
+        app:srcCompat="@drawable/resta" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
