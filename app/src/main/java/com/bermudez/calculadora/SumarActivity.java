@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SumarActivity extends AppCompatActivity {
     Button btnCalcularSuma;
@@ -23,6 +24,9 @@ public class SumarActivity extends AppCompatActivity {
         btnCalcularSuma.setOnClickListener(e->{
             txtResultadoSuma.setText(""+sumar());
         });
+        if(numberSuma.getText()==null||numberSuma2.getText()==null){
+            Toast.makeText(this,"Introduce algo",Toast.LENGTH_LONG).show();
+        }
 
     }
     public int sumar() {
