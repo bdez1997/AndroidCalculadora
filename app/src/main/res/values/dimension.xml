@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="LblWidth">180dp</dimen>
+    <dimen name="lblHeight">30dp</dimen>
+
+    <dimen name="btnWidth">281dp</dimen>
+    <dimen name="btnHeight">62dp</dimen>
+</resources>
