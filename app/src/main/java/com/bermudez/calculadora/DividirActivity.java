@@ -23,10 +23,17 @@ public class DividirActivity extends AppCompatActivity {
         txtNumberDivision=findViewById(R.id.editTxtNumberDividir);
         txtNumberDivision2=findViewById(R.id.editTxtDividir2);
         txtResDivision=findViewById(R.id.txtResDividir);
+        btnDivision.setOnClickListener(e->{
 
-           btnDivision.setOnClickListener(e->{
-               txtResDivision.setText(""+dividir());
-           });
+            if(txtNumberDivision.getText().toString().isEmpty()||txtNumberDivision2.getText().toString().isEmpty()) {
+                Toast.makeText(this, "Debes introducir un número en cada campo", Toast.LENGTH_SHORT).show();
+            }else{
+                txtResDivision.setText(""+dividir());
+            }
+        });
+
+
+
     }
     public double dividir(){
         double doNumero,doNumero1,doDivision;

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RestarActivity extends AppCompatActivity {
     EditText NumberResta,NumberResta2;
@@ -24,7 +25,12 @@ public class RestarActivity extends AppCompatActivity {
         txtResultadoResta=findViewById(R.id.txtResultadoRestar);
 
         btnRestaOp.setOnClickListener(e->{
-            txtResultadoResta.setText(""+Restar());
+            if(NumberResta.getText().toString().isEmpty()||NumberResta.getText().toString().isEmpty()){
+                Toast.makeText(this, "Debes introducir un número en cada campo", Toast.LENGTH_SHORT).show();
+            }else{
+                txtResultadoResta.setText(""+Restar());
+            }
+
         });
 
     }

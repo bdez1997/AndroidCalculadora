@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MultiplicarActivity extends AppCompatActivity {
     ImageButton btnMultiplicacion;
@@ -22,12 +23,14 @@ public class MultiplicarActivity extends AppCompatActivity {
         txtNumberMultiplicar=findViewById(R.id.edittxtMultiplicar);
         txtNumberMultiplicar2=findViewById(R.id.editTxtMultiplicar2);
         txtMultiplicacion=findViewById(R.id.txtResMultiplicacion);
+
         btnMultiplicacion.setOnClickListener(e->{
-            txtMultiplicacion.setText(""+multiplicar());
+            if(txtNumberMultiplicar.getText().toString().isEmpty()||txtNumberMultiplicar.getText().toString().isEmpty()){
+                Toast.makeText(this, "Debes introducir un número en cada campo", Toast.LENGTH_SHORT).show();
+            }else{
+                txtMultiplicacion.setText(""+multiplicar());
+            }
         });
-
-
-
     }
     public double multiplicar(){
         double doNum1,doNum2,doMultiplicacion;

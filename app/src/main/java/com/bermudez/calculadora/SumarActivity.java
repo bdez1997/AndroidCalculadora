@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SumarActivity extends AppCompatActivity {
     ImageButton btnCalcularSuma;
@@ -16,6 +17,7 @@ public class SumarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sumar);
+
         setTitle("Sumar");
         btnCalcularSuma=findViewById(R.id.btnCalcularSuma);
         numberSuma=findViewById(R.id.editTextNumberSuma);
@@ -23,7 +25,12 @@ public class SumarActivity extends AppCompatActivity {
         txtResultadoSuma=findViewById(R.id.txtResultadoRestar);
 
         btnCalcularSuma.setOnClickListener(e->{
-                txtResultadoSuma.setText(""+sumar());
+        if(numberSuma.getText().toString().isEmpty()||numberSuma2.getText().toString().isEmpty()){
+            Toast.makeText(this, "Debes introducir un número en cada campo", Toast.LENGTH_SHORT).show();
+        }else{
+            txtResultadoSuma.setText(""+sumar());
+        }
+
         });
 
     }
