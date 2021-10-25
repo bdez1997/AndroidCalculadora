@@ -32,7 +32,10 @@
             android:id="@+id/btnSumar"
             android:layout_width="@dimen/btnWidth"
             android:layout_height="@dimen/btnHeight"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:text="@string/sumar"
+            app:layout_constraintBottom_toTopOf="@+id/btnRestar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,19 +45,22 @@
             android:id="@+id/btnRestar"
             android:layout_width="@dimen/btnWidth"
             android:layout_height="@dimen/btnHeight"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="92dp"
             android:text="@string/restar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSumar" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnMultiplicar"
             android:layout_width="@dimen/btnWidth"
             android:layout_height="@dimen/btnHeight"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="92dp"
             android:text="@string/multiplicar"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
 
@@ -65,8 +71,10 @@
             android:layout_marginTop="15dp"
             android:text="@string/dividir"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnMultiplicar" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

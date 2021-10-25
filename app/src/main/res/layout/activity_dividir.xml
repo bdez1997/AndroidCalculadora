@@ -2,51 +2,50 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SumarActivity">
+    tools:context=".DividirActivity">
 
     <EditText
-        android:id="@+id/editTextNumberSuma"
-        android:layout_width="284dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="128dp"
+        android:id="@+id/editTxtDividir"
+        android:layout_width="217dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="92dp"
         android:ems="10"
-        android:hint="Introduzca un número para sumar"
+        android:hint="Introduce un número para Dividir"
         android:inputType="number"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumberSuma2"
-        android:layout_width="284dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="44dp"
+        android:id="@+id/editTxtDividir2"
+        android:layout_width="217dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
-        android:hint="Introduce otro número para sumar "
+        android:hint="Introduce un numero para dividir"
         android:inputType="number"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSuma" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtDividir" />
 
     <TextView
-        android:id="@+id/txtResultadoRestar"
+        android:id="@+id/txtResultadoDividir"
         android:layout_width="@dimen/LblWidth"
         android:layout_height="@dimen/lblHeight"
-        android:layout_marginTop="72dp"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSuma2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtDividir2" />
 
     <Button
-        android:id="@+id/btnCalcularSuma"
+        android:id="@+id/btnDividir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -54,5 +53,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResultadoRestar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResultadoDividir" />
 </androidx.constraintlayout.widget.ConstraintLayout>
