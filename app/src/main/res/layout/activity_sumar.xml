@@ -38,8 +38,21 @@
         android:layout_width="@dimen/LblWidth"
         android:layout_height="@dimen/lblHeight"
         android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberSumar2" />
+
+    <Button
+        android:id="@+id/btnCalcularSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultadoSuma" />
 </androidx.constraintlayout.widget.ConstraintLayout>
